@@ -13,20 +13,31 @@ public class Code {
     }
 
     public static int sum(int[] numbers) {
-        return 0;
+        int result = 0;
+        for (int number: numbers) {
+            result += number;
+
+        }
+        return result;
     }
 
     public static double average(int[] numbers) {
-        return 0.0;
+        double sum = sum(numbers);
+
+        return Double.valueOf(sum / numbers.length);
+
     }
+
 
     public static Integer minimumElement(int[] integers) {
         return null;
     }
 
     public static String asString(int[] elements) {
+
         return "";
     }
+
 
     public static Character mode(String input) {
         return null;
