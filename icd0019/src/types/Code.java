@@ -44,7 +44,7 @@ public class Code {
     public static String asString(int[] elements) {
         String result = "";
         for (int i = 0; i < elements.length; i++) {
-            if (i == elements.length -1)
+            if (i == elements.length-1)
                 result += elements[i];
             else {
                 result += elements[i] + ", ";
