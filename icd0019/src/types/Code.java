@@ -29,8 +29,16 @@ public class Code {
     }
 
 
+
     public static Integer minimumElement(int[] integers) {
-        return null;
+        if (integers.length == 0)
+            return null;
+        int minimumElement = integers[0];
+        for (int i = 1; i < integers.length; i++) {
+            if (integers[i] < minimumElement)
+                minimumElement = integers[i];
+        }
+        return minimumElement;
     }
 
     public static String asString(int[] elements) {
